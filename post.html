@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sergey Golovashkin</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+</head>
+<body>
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="profile__card">
+                    <div class="profile__photo">
+                        <h2>Sergey Golovashkin</h2>
+                    </div>
+
+                    <nav>
+                        <a href="post.html">i write</a>
+                        <a href="https://www.behance.net/apocalypse_god" target="_blank">my designs</a>
+                        <a href="https://github.com/holovashkin" target="_blank">my code</a>
+                        <a href="projects.html">my projects</a>
+                    </nav>
+                    <div class="social">
+                        <a href="https://www.facebook.com/serge.golovashkin" target="_blank">
+                            <img src="./img/fb.svg" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/apocalypse_god/" target="_blank">
+                            <img src="./img/instagram.svg" alt="">
+                        </a>
+                        <a href="https://twitter.com/holovashkin" target="_blank">
+                            <img src="./img/twitter.svg" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/serhii-holovashkin/" target="_blank">
+                            <img src="./img/in.svg" alt="">
+                        </a>
+                        <a href="https://www.behance.net/apocalypse_god" target="_blank">
+                            <img src="./img/be.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center contact">Want to hire me? hit me a message at sergey@holovaskhin.xyz</p>
+            </div>
+            <div class="col-md-9">
+                <h2><a href="index.html">&#8592;</a> Native responsive grids with Flexbox CSS</h2>
+                <div class="info__block bg-white">
+                    Time to say bye to bootstrap and create your own cool & responsive grids. <br>
+
+                    Why to use frameworks which will increase load time, contain lots of unused features and make your design look in a regular way if you can create your own, native solution?
+                    Today we will be talking about standards that are available now, and some of upcoming standards like CSS Grid Layout.
+                    <br><br>
+                    To create appropriate layout for your future template you first should have visualization — the basic form, of how it should look. You should decide how many columns you'll need and write rules for each of them
+                    <br>
+
+                    .col-1 .col-2 .col-3 .col-4 .col-5 .col-6 .col-7 .col-8 .col-9 .col-10 .col-11 .col-12
+                    <br><br>
+                    You can define less or more, depending on your website structure. There are some basic standards, like containers, wrappers and so on. Basically you can create 1-2-3-X types of containers, such as .container-full {width:100%;}, .container-fix {width:1260px;}, .container-x {width: x} for other types, like variations for TV OS's, Smart Watch and so on, in case of developing using Cordova.
+                    <br><br>
+                    Sometimes you need more columns to fit in content, so of course you can put them inside of each other, but in this case you should make sure to use % width, otherwise it will be pointless and break the DOM.
+                    <br><br>
+                    Other good solution to manage content and structure is to add rows, this are very common to bootstrap, but what if we customize them, like adding predefined classes such as .row-vc {display:flex; align-items:center;} for displaying content with vertically centered. For menu's, you could add a class row-vc row-vc-nav {justify-content: space-around;} to fit them proportionally to the row width, which can be placed inside of container or more-likely .col-x.
+                    Note: Flexbox CSS is standard, and is now supported in all popular browsers. https://www.w3.org/TR/css-flexbox-1/
+                    <br><br>
+                    Don't forget to use @media for mobile devices support, where you'll need to set the rules of displaying content for each element.
+                    <br>
+                    You can define additional layout settings and you should, if the element that you're creating will be appearing more than 1 time on the page.
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107056879-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107056879-1');
+</script>
+
+
+</body>
+</html>
